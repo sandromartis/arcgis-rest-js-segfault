@@ -3,13 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@esri/arcgis-rest-request": "^4.0.3",
-    "node-fetch": "^2.6.7"
+    "@esri/arcgis-rest-request": "^4.0.3"
   },
   "devDependencies": {
     "@types/jest": "^28.1.4",
