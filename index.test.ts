@@ -1,13 +1,17 @@
 import { request } from "@esri/arcgis-rest-request";
 
 test("SegFaultTest", async () => {
-  await request("https://www.arcgis.com/sharing/rest/search", {
+  console.log("Running request 1");
+
+  const result1 = await request("https://www.arcgis.com/sharing/rest/search", {
     params: { q: "parks" },
   });
 
   console.log("Request 1 done");
 
-  await request("https://www.arcgis.com/sharing/rest/search", {
+  console.log("Running request 2");
+
+  const result2 = await request("https://www.arcgis.com/sharing/rest/search", {
     params: { q: "parks" },
   });
 
